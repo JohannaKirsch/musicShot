@@ -104,11 +104,9 @@ a {
 }
 
 #calculator {
-    /*background-color: #47D1F5;*/
     position: absolute;
     left: 0;
     right: 0;
-    /*top: 75px;*/
     bottom: 0px;
     margin: 0 auto;
     width: 70px;
@@ -123,7 +121,6 @@ a {
     font-size: 0.75em;
 }
 
-
 #new-ball-generator {
     position: absolute;
     position: absolute;
@@ -132,11 +129,6 @@ a {
     bottom: 0;
     margin: 0 auto;
 }
-
-/*midi*/
-/*html {
-    overscroll-behavior: none;
-}*/
 
 #counter {
     position: absolute;
@@ -148,30 +140,4 @@ a {
     text-align: center;
     font-size: 4em;
     line-height: 1em;
-}
-
-#flash {
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff;
-    z-index: 1;
-    opacity: 0;
-}
-
-#flash.flashing {
-    animation-name: flash;
-    animation-duration: 0.4s;
-}
-
-@keyframes flash {
-    0% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-    }
 }
