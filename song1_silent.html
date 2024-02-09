@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Music Shot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="board">
+        <div id="comboPoints">0x</div>
+        <div class="combo">combo</div>
+        <div id="pointsCounter">0</div>
+        <div id="points">points</div>
+        <div class="shootBoard" id="shoot-board"></div>
+        <div id="motivationText">shoot your shot!</div>
+    </div>
+    <div id="container">
+    </div>
+    <div id="calculator"></div>
+    <div id="endText" style="visibility: hidden;font-size: 42px; text-align: center;margin-top: 200px;">
+        <div>Game is over!</div>
+        <div>
+            <span id="endPoints">0</span>
+            <span>points</span>
+            <div style="font-size: 48px; font-weight: 700; text-align: center;">
+                <a onclick="restartGame()">retry</a> | <a href="songs.html">quit</a>
+            </div>
+        </div>
+        <script src="script/song2.js"></script>
+        <script src="script/request.js"></script>
+</body>
+
+</html>

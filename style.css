@@ -1,0 +1,177 @@
+body {
+    background-color: black;
+    font-family: 'Source Code Pro', monospace;
+    font-weight: 700;
+    font-size: 26px;
+    color: white;
+}
+
+/*start menu*/
+.startMenu {
+    margin: auto;
+    border: white;
+    border-style: solid;
+    border-width: 6px;
+}
+
+a:hover {
+    color: #47D1F5;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.board {
+    margin: -15px 50px 0px 50px;
+    padding: 25px;
+    padding-top: 100px;
+    border: #47D1F5;
+    border-style: solid;
+    border-width: 6px;
+    display: grid;
+    grid-template-areas:
+        'comboPoints board pointsCounter'
+        'combo board points'
+        'combo board points'
+        'combo board points'
+        'combo board points'
+        'combo board points'
+        'combo board points'
+        'combo board points'
+        'combo board points'
+        'combo board points'
+        'motivation motivation motivation';
+    gap: 10px;
+}
+
+.combo {
+    color: #47D1F5;
+    font-size: 0.75em;
+    grid-area: combo;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+#points {
+    color: #47D1F5;
+    font-size: 0.75em;
+    text-align: right;
+    grid-area: points;
+    font-weight: 400;
+    margin-top: -10px;
+}
+
+#comboPoints {
+    color: #47D1F5;
+    grid-area: comboPoints;
+}
+
+#pointsCounter {
+    color: #47D1F5;
+    text-align: right;
+    grid-area: pointsCounter;
+}
+
+.shootBoard {
+    margin: auto;
+    width: 250px;
+    height: 150px;
+    border: white;
+    border-style: solid;
+    border-width: 6px;
+    grid-area: board;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+}
+
+.basketball {
+    background-image: url(basketball.svg);
+    background-size: cover;
+    z-index: 1;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+    filter: drop-shadow(0px 10px 12px rgba(245, 154, 71, 0.5)) drop-shadow(0px 20px 25px rgba(245, 154, 71, 0.5)) drop-shadow(0px 30px 50px rgba(245, 154, 71, 0.5));
+
+}
+
+#calculator {
+    /*background-color: #47D1F5;*/
+    position: absolute;
+    left: 0;
+    right: 0;
+    /*top: 75px;*/
+    bottom: 0px;
+    margin: 0 auto;
+    width: 70px;
+    height: 70px;
+}
+
+#motivationText {
+    margin: auto;
+    margin-top: 40px;
+    text-align: center;
+    grid-area: motivation;
+    font-size: 0.75em;
+}
+
+
+#new-ball-generator {
+    position: absolute;
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: 0 auto;
+}
+
+/*midi*/
+/*html {
+    overscroll-behavior: none;
+}*/
+
+#counter {
+    position: absolute;
+    box-sizing: border-box;
+    left: 0;
+    top: 50%;
+    width: 100%;
+    margin: -0.5em 0 0 0;
+    text-align: center;
+    font-size: 4em;
+    line-height: 1em;
+}
+
+#flash {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1;
+    opacity: 0;
+}
+
+#flash.flashing {
+    animation-name: flash;
+    animation-duration: 0.4s;
+}
+
+@keyframes flash {
+    0% {
+        opacity: 1;
+    }
+
+    100% {
+        opacity: 0;
+    }
+}
